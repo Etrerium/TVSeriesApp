@@ -3,11 +3,8 @@ plugins {
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
 
-    id("com.android.appilcation")
-    id("org.jetbrains.kotlin.android")
     id("kotlin-parcelize")
     id("kotlin-kapt")
-    id("com.google.dagger.hilt.android")
 }
 
 android {
@@ -72,6 +69,7 @@ dependencies {
 
     // Dagger Hilt
     implementation("com.google.dagger:hilt-android:2.50")
+    implementation("com.google.firebase:firebase-appdistribution-gradle:5.1.1")
     kapt("com.google.dagger:hilt-android-compiler:2.56.2")
     implementation("androidx.hilt:hilt-navigation-compose:1.1.0")
 
